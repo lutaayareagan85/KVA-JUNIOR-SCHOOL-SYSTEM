@@ -1,0 +1,12 @@
+{
+  "name": "Kids Villa Academy",
+  "description": "Kids Villa Academy Junior School Management  app for Kitemu Nsangi, Wakiso District. Features offline mode, NCDC progress tracking, and automated databases.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

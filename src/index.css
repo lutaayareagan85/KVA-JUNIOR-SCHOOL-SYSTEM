@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply antialiased select-none;
+  }
+
+  /* Dynamic high-contrast modern pigment overrides for the entire app */
+  
+  /* Overrides for background elements - convert muddy yellow-creams to crisp white cards */
+  [class*="bg-[#FDFBF7]"], 
+  [class*="bg-[#FAF8F5]"], 
+  [class*="bg-[#FAF9F5]"],
+  [class*="bg-[#FAF9F6]"] {
+    background-color: #FFFFFF !important;
+  }
+  
+  /* Overrides for light sand background boxes - convert to soft neutral stone */
+  [class*="bg-[#F2EDE4]"],
+  [class*="bg-[#FAF7F4]"],
+  [class*="bg-[#FAF8F5]/60"],
+  [class*="bg-[#FAF8F5]/20"] {
+    background-color: #F5F5F4 !important;
+  }
+  
+  /* Overrides for muddy clay borders - convert to crisp stone borders for enterprise grid alignment */
+  [class*="border-[#E0D8CC]"],
+  [class*="border-[#E0D8CC]/80"],
+  [class*="border-[#E0D8CC]/60"],
+  [class*="border-[#E0D8CC]/50"] {
+    border-color: #E2E8F0 !important;
+  }
+  
+  [class*="divide-[#E0D8CC]"],
+  [class*="divide-[#F2EDE4]"] {
+    border-color: #E2E8F0 !important;
+  }
+  
+  /* Overrides for muddy brown text - convert to deep rich charcoal stone-900 */
+  [class*="text-[#3D2B1F]"] {
+    color: #1C1917 !important;
+  }
+  
+  /* Overrides for medium brown subheadings - convert to stone-700 */
+  [class*="text-[#5A3E2B]"] {
+    color: #44403C !important;
+  }
+  
+  /* Medium brown text representing grey captions - convert to neutral stone-500 */
+  [class*="text-[#7D6B5D]"] {
+    color: #78716C !important;
+  }
+
+  /* Overrides for Olive green - convert to vibrant Emerald-600 with high contrast */
+  [class*="text-[#6B8E23]"] {
+    color: #059669 !important;
+  }
+  
+  [class*="bg-[#6B8E23]"] {
+    background-color: #10B981 !important;
+  }
+  
+  [class*="hover:bg-[#E8F1D7]"]:hover,
+  [class*="bg-[#E8F1D7]"] {
+    background-color: #ECFDF5 !important;
+  }
+  
+  /* Overrides for terracotta clay orange - convert to beautiful light blue */
+  [class*="text-[#8C5A3C]"] {
+    color: #0284c7 !important;
+  }
+  
+  [class*="bg-[#8C5A3C]"] {
+    background-color: #0284c7 !important;
+  }
+  
+  [class*="hover:bg-[#8C5A3C]"]:hover {
+    background-color: #0369a1 !important;
+  }
+  
+  [class*="hover:bg-[#744a30]"]:hover {
+    background-color: #0369a1 !important;
+  }
+
+  /* Overrides for background elements to convert warm grey/muddy clay to premium light blue sky aesthetic */
+  [class*="bg-[#F5F5F4]"] {
+    background-color: #F0F9FF !important;
+  }
+
+  [class*="border-[#E0D8CC]"],
+  [class*="border-[#E0D8CC]/80"],
+  [class*="border-[#E0D8CC]/60"],
+  [class*="border-[#E0D8CC]/50"] {
+    border-color: #E0F2FE !important; /* Soft, delicate light-blue borders instead of stone/beige */
+  }
+
+  /* Overrides for dull beige/cream button hovers - convert to light blue tinted hovers */
+  [class*="hover:bg-[#F2EDE4]"]:hover,
+  [class*="hover:bg-[#EAE4D9]"]:hover {
+    background-color: #E0F2FE !important;
+  }
+
+  /* Custom subtle scrollbar styling for professional dashboards */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #D6D3D1;
+    border-radius: 9999px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #A8A29E;
+  }
+}
+
+/* Custom premium hover states & card enhancements */
+.hover-card-trigger {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-card-trigger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.05);
+}
+
+/* Fade in smooth animations */
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInSmooth {
+  animation: fadeInSmooth 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Perfect crisp modern input focus highlights */
+input:focus, select:focus, textarea:focus {
+  outline: none !important;
+  border-color: #0284c7 !important;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.15) !important;
+}

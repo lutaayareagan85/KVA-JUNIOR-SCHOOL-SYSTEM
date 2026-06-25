@@ -1,0 +1,22 @@
+{
+  "short_name": "Kids Villa",
+  "name": "Kids Villa Academy",
+  "description": "Kids Villa Academy Management System, Kitemu Nsangi Wakiso District",
+  "start_url": "/",
+  "background_color": "#FDFBF7",
+  "theme_color": "#8C5A3C",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/fluency/192/school.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://img.icons8.com/fluency/512/school.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
